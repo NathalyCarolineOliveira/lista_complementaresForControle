@@ -8,12 +8,21 @@
     */
 
     //ENTRADA
+    const pesssoas = Number(prompt(`Quantidade de pessoas que terão sua média informada:`).replace(",", "."))
+    let soma = alturas.reduce((soma, altura) => soma + altura, 0);
+    let media = alturas.reduce((soma, altura) => soma + altura, 0) / alturas.length;
 
-    
+
     //PROCESSAMENTO
-    
-    
+    let alturas = [];
+    for (let index = 1; index < pessoas; index++) {
+        alturas.push(Number(prompt(`Qual a altura das pesssoa ${index} e ${pesssoas}`)).trim())
+        Math.max(...alturas)
+        Math.min(...alturas)
+    }
+
     //SAÍDA
-    
+
+
 
 </script>

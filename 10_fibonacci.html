@@ -8,12 +8,18 @@
     */
 
     //ENTRADA
+    let dudaFeia = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+    const quant = Number(prompt(`Quantos números deseja adicionar na sequẽncia de fibonacci?`));
 
-    
     //PROCESSAMENTO
+    for (let index = 1; index < quant; index++) {
+        dudaFeia.push(dudaFeia[dudaFeia.length - 1] + dudaFeia[dudaFeia.length - 2]);
+        
+    }
     
     
     //SAÍDA
+    alert(`Fibonacci finaly: ${dudaFeia.join(", ")}.`)
     
 
 </script>
